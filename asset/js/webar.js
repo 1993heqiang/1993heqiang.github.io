@@ -32,6 +32,7 @@ class WebAR {
                 let index = 0;
                 devices.find((device) => {
                     if (device.kind === 'videoinput') {
+                       console.log(JSON.stringify(device))
                         const option = document.createElement('option');
                         // 在iOS12.2上deviceId为空
                         if (device.deviceId == '') {
@@ -43,7 +44,7 @@ class WebAR {
                             option.text = device.label || 'camera ' + (videoDevice.length + 1).toString();
                             option.value = JSON.stringify({ audio: false, video: { deviceId: { exact: device.deviceId } } });
                         }
-                        console.log(JSON.stringify(option))
+                        
                         // 将摄像头信息存储在select元素中，方便切换前、后置摄像头
                         videoDevice.appendChild(option);
                     }
