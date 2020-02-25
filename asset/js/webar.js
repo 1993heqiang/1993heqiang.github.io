@@ -145,8 +145,11 @@ class WebAR {
             this.isRecognizing = true;
             // 从摄像头中抓取一张图片
             const image = { image: this.captureVideo() };
+            console.log(image)
+            this.stopRecognize();
+            callback("success")
             // 发送到服务器识别
-            this.httpPost(image)
+        /*    this.httpPost(image)
                 .then((msg) => {
                 this.stopRecognize();
                 callback(msg);
@@ -154,7 +157,7 @@ class WebAR {
                 .catch((err) => {
                 this.isRecognizing = false;
                 console.info(err);
-            });
+            });*/
         }, this.interval);
     }
     /**
