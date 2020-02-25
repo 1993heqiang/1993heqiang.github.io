@@ -2,10 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>WebAR Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="asset/css/default.css" />
 </head>
 <body>
-  <h1>谢聪妮说:贺强是傻逼！！！</h1>
-  <h1>贺强说:傻逼就傻逼，傻逼快乐多，哈哈哈</h1>
+
+<div class="footer">
+    <input type="button" value="打开摄像头" id="openCamera" />
+    <select class="none" id="videoDevice"></select>
+    <input class="none" type="button" value="开始识别" id="start" />
+    <input class="none" type="button" value="停止识别" id="stop" />
+</div>
+
+<script type="text/javascript" src="asset/js/adapter.js"></script>
+<script type="text/javascript" src="asset/js/vconsole.min.js"></script>
+<script type="text/javascript" src="asset/js/webar.js"></script>
+<script>
+    (function(){
+        var vConsole = new VConsole();
+
+        const now = (new Date()).getTime();
+
+        const e = document.createElement('script');
+        e.setAttribute('src', `asset/js/app.js?t=${now}`);
+        document.body.appendChild(e);
+    })();
+</script>
+
 </body>
 </html>
