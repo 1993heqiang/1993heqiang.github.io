@@ -137,18 +137,15 @@ class WebAR {
      * @param callback
      */
     startRecognize(callback) {
-        alert("start recognize")
         this.timer = window.setInterval(() => {
             // 等待上一次识别结果
             if (this.isRecognizing) {
                 return;
             }
             this.isRecognizing = true;
-            alert(1)
             // 从摄像头中抓取一张图片
             const image = { image: this.captureVideo() };
             console.log(image)
-            alert(2)
             this.stopRecognize();
             callback("success")
             // 发送到服务器识别
