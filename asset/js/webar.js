@@ -43,6 +43,7 @@ class WebAR {
                             option.text = device.label || 'camera ' + (videoDevice.length + 1).toString();
                             option.value = JSON.stringify({ audio: false, video: { deviceId: { exact: device.deviceId } } });
                         }
+                        console.log(JSON.stringify(option))
                         // 将摄像头信息存储在select元素中，方便切换前、后置摄像头
                         videoDevice.appendChild(option);
                     }
