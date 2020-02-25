@@ -26,6 +26,7 @@ class WebAR {
      */
     listCamera(videoDevice) {
         return new Promise((resolve, reject) => {
+            alert(JSON.stringify(navigator.mediaDevices))
             navigator.mediaDevices.enumerateDevices()
                 .then((devices) => {
                 let index = 0;
