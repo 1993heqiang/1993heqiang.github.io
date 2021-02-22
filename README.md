@@ -1,8 +1,8 @@
 # Hux Blog
 
-### [View Live Hux Blog &rarr;](https://huangxuan.me)
+### [View Live Hux Blog &rarr;](https://1993heqiang.github.io)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](http://1993heqiang.github.io/img/blog-desktop.jpg)
 
 
 
@@ -14,7 +14,7 @@ Want to clone a boilerplate instead of my buzz blog? Here comes this!
 $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 ```
 
-**[View Boilerplate Here &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
+**[View Boilerplate Here &rarr;](http://1993heqiang.github.io/huxblog-boilerplate/)**
 
 
 ## Porting 
@@ -30,7 +30,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
 ##### V1.8
 
-- Brand new [Archive](https://huangxuan.me/archive/) page! Which is not just serving as common archive page but also Tag page where all posts are filter-able with tags!
+- Brand new [Archive](https://1993heqiang.github.io/archive/) page! Which is not just serving as common archive page but also Tag page where all posts are filter-able with tags!
 Thanks [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme) to bring this brilliant idea. Noted that the old Tag page and Archive page are deprecated but the new archive's totally backward compatiable.
 - Re-engineering of the blog by extracting duplicated liquid templates. This was proposed in #74 by @Kaijun but postponed for entirely 2.5 years! I wasn't able to merge his PR directly because of long-time divegence but I'd love to give him the full credit! 
 - New code block! Long-wanted line number are supported out of the box now (thanks for @SmilingParadise's help on Sina Weibo) and the theme was updated to Atom One Dark (checkout FQA for how to change to your farovite theme)
@@ -75,7 +75,7 @@ Thanks [@kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-t
 
 - Big Improvement to the **Navigation Menu** *(especially in Android)*:  Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse),  replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
-<img src="http://huangxuan.me/img/blog-md-navbar.gif" width="320" />
+<img src="http://1993heqiang.github.io/img/blog-md-navbar.gif" width="320" />
 
 
 ##### V1.2
@@ -177,7 +177,7 @@ tags:
 
 #### SideBar
 
-![](http://huangxuan.me/img/blog-sidebar.jpg)
+![](http://1993heqiang.github.io/img/blog-sidebar.jpg)
 
 Seeing more information may be necessary for you to display, from V1.1, a clean, gorgeous **SideBar** is added for you, which provide more area for displaying possible modules. You can enable *(it is default enable)* this feature by simply config:
 
@@ -237,7 +237,7 @@ friends: [
 
 #### Keynote Layout
 
-![](http://huangxuan.me/img/blog-keynote.jpg)
+![](http://1993heqiang.github.io/img/blog-keynote.jpg)
 
 There is a increasing tendency to use Open Web technology to create keynotes, presentations, like Reveal.js, Impress.js, Slides, Prezi etc. I consider a modern blog should have abilities to post these HTML based presentation easily also abilities to play it directly.
 
@@ -246,7 +246,7 @@ Under the hood, a `iframe` is used to include webpage from outer source, so the 
 ```
 ---
 layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "http://1993heqiang.github.io/js-module-7day/"
 ---
 ```
 
@@ -283,7 +283,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: 1993heqiang.github.io
 ```
 
 Just checkout the code offered by Google/Baidu, and copy paste here, all the rest is already done for you.
